@@ -1,72 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AirBnb Clone</title>
-        <link rel="stylesheet" href="styles/4-common.css">
-        <link rel="stylesheet" href="styles/3-header.css">
-        <link rel="stylesheet" href="styles/3-footer.css">
-        <link rel="stylesheet" href="styles/6-filters.css">
-        <link rel="stylesheet" href="styles/7-places.css">
-        <link rel="icon" href="images/icon.png" type="image/png">
-    </head>
-    <body>
-        <header>
-            <div class="logo"></div>
-        </header>
-        <div class="container">
-            <section class="filters">
-                <button type="button">Search</button>
-                <div class="locations">
-                    <h3>States</h3>
-                    <h4>California, Arizona...</h4>
-                    <ul class="popover">
-                        <li><h2>Arizona:</h2></li>
-                        <li>
-                            <ul class="popover_list">
-                                <li>Page</li>
-                                <li>Page2</li>
-                            </ul>
-                        </li>
-                        <li><h2>California:</h2></li>
-                        <li>
-                                <ul class="popover_list">
-                                    <li>San Francisco</li>
-                                    <li>Los Altos</li>
-                                </ul>
-                            </li>
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/7-places.css">
+    <title>Display results</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <h1>Header</h1>
+    </header>
+    <div class="container">
+        <section class="filters">
+            <div class="locations">
+                <!-- Your location filter content here -->
+                <ul class="popover">
+                    <li>State 1</li>
+                    <li>State 2</li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <!-- Your amenities filter content here -->
+                <ul class="popover">
+                    <li>Amenity 1</li>
+                    <li>Amenity 2</li>
+                </ul>
+            </div>
+            <button>Search</button>
+        </section>
+        <section class="places">
+            <h1>Places</h1>
+            <!-- Your places content here -->
+            <article>
+                <h2>Place Name</h2>
+                <div class="price_by_night">$100</div>
+                <div class="information">
+                    <div class="max_guest">Max Guests</div>
+                    <div class="number_rooms">Number of Rooms</div>
+                    <div class="number_bathrooms">Number of Bathrooms</div>
                 </div>
-                <div class="amenities">
-                    <h3>Amenities</h3>
-                    <h4>Internet, Kitchen...</h4>
-                    <ul class="popover">
-                        <li>Internet</li>
-                        <li>TV</li>
-                        <li>Kitchen</li>
-                        <li>Iron</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="places">
-                <div class="places_title">
-                        <h1>Places</h1>
-                </div>
-                <div class="articles">
-                    <article>
-                        <h2>My Home</h2>
-                    </article>
-                    <article>
-                        <h2>Tiny House</h2>
-                    </article>
-                    <article>
-                        <h2>A suite</h2>
-                    </article>
-                </div>
-
-            </section>
-        </div>
-        <footer>
-            Best School
-        </footer>
-    </body>
+                <div class="user">Owner: John Doe</div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <h2>Footer - Best School</h2>
+    </footer>
+</body>
 </html>
